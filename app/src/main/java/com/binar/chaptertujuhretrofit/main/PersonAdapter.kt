@@ -21,12 +21,12 @@ class PersonAdapter(val listPerson : List<GetPersonsResponse.Result>, val presen
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.tvID.text = listPerson[position].iD.toString()
-        holder.itemView.tvCreatedAt.text = listPerson[position].createdAt
-        holder.itemView.tvUpdatedAt.text = listPerson[position].updatedAt
-        holder.itemView.tvDeletedAt.text = "Deleted At : ${listPerson[position].deletedAt} "
-        holder.itemView.tvFirstName.text = listPerson[position].firstName
-        holder.itemView.tvLastName.text = listPerson[position].lastName
+        holder.itemView.tvID.text = "ID : ${listPerson[position].iD.toString()}"
+        holder.itemView.tvCreatedAt.text = "Created at : ${listPerson[position].createdAt}"
+        holder.itemView.tvUpdatedAt.text = "Updated at : ${listPerson[position].updatedAt}"
+        holder.itemView.tvDeletedAt.text = "Deleted at : ${listPerson[position].deletedAt}"
+        holder.itemView.tvFirstName.text = "Firstname : ${listPerson[position].firstName}"
+        holder.itemView.tvLastName.text  = "Lastname : ${listPerson[position].lastName}"
         holder.itemView.setOnClickListener {
             presenter.goToUpdateActivity(listPerson[position])
         }

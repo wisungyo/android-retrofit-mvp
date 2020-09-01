@@ -8,13 +8,12 @@
     tools:context=".add.AddPersonActivity">
 
     <EditText
-
         android:id="@+id/etFirstName"
         android:hint="First Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <EditText
 
+    <EditText
         android:id="@+id/etLastName"
         android:hint="Last Name"
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
 
     <Button
         android:id="@+id/btnAddPerson"
-        android:text="ADD PERSON"
+        android:text="ADD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

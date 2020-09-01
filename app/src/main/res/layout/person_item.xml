@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView app:cardUseCompatPadding="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:elevation="4dp"
-    app:contentPadding="4dp"
+    app:contentPadding="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -44,8 +44,11 @@
 
         <ImageView
             android:id="@+id/ivDelete"
-            android:src="@drawable/ic_baseline_delete"
-            android:layout_width="match_parent"
+            android:src="@drawable/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
             android:layout_height="32dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
